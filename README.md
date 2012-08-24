@@ -10,11 +10,13 @@ This library is able to connect to a Socket.IO server, and then send and receive
 ### Example Code
 The minimal amount of code needed to make a connection to a Socket.IO server is as follows:
 
-	`socketio_client_handler_ptr handler(new socketio_client_handler());
+	socketio_client_handler_ptr handler(new socketio_client_handler());
 	client endpoint(handler);
-	client::connection_ptr con = endpoint.get_connection(handler->perform_handshake("ws://localhost:8080"));`
+	client::connection_ptr con = endpoint.get_connection(handler->perform_handshake("ws://localhost:8080"));
  
  For examples of event binding and additional settings, see the sample code in the msvc folder.
  
 ## Notes
 This client isn't a full port of the Socket.IO client at this point. It doesn't handle reconnection events, fire off default events, or maintain any status indicators. If you'd like to help make this a full implementation of the Socket.IO client, fork away!
+
+Socket.io-client++-specific source is released under the BSD license.
