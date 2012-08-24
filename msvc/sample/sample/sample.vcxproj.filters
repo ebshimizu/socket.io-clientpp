@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="websocketpp">
+      <UniqueIdentifier>{42209a0f-cc3c-46f5-adb8-a0c3dcc47090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson">
+      <UniqueIdentifier>{cee9964f-5e66-47db-9f20-68bdaa0ff15c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\base64\base64.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\md5\md5.c">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\messages\data.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\network_utilities.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\processors\hybi_header.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\processors\hybi_util.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\rng\blank_rng.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\rng\boost_rng.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\sha1\sha1.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\websocketpp\src\uri.cpp">
+      <Filter>websocketpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket_io_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\base64\base64.h">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\common.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\connection.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\endpoint.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\http\constants.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\http\parser.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\logger\logger.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\md5\md5.h">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\md5\md5.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\messages\control.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\messages\data.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\network_utilities.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\processors\hybi.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\processors\hybi_header.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\processors\hybi_legacy.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\processors\hybi_util.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\processors\processor.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\rng\blank_rng.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\rng\boost_rng.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\roles\client.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\roles\server.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\sha1\sha1.h">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\shared_const_buffer.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\sockets\plain.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\sockets\socket_base.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\sockets\tls.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\uri.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\utf8_validator\utf8_validator.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\websocketpp.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\websocketpp\src\websocket_frame.hpp">
+      <Filter>websocketpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\allocators.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\document.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\encodedstream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\encodings.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\filereadstream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\filestream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\filewritestream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\internal\pow10.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\internal\stack.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\internal\strfunc.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\prettywriter.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\rapidjson.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\reader.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\stringbuffer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\rapidjson\include\rapidjson\writer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\socket_io_client.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
