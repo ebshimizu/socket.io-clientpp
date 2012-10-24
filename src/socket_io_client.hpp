@@ -51,7 +51,8 @@ public:
 class socketio_client_handler : public client::handler {
 public:
    socketio_client_handler() :
-      m_heartbeatActive(false)
+      m_heartbeatActive(false),
+      m_connected(false)
    { }
 
    ~socketio_client_handler() {

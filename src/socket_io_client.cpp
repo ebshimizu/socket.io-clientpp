@@ -33,6 +33,7 @@ void socketio_client_handler::on_fail(connection_ptr con)
 {
    stop_heartbeat();
    m_con = connection_ptr();
+   m_connected = false;
 
    LOG("Connection failed." << std::endl);
 }
