@@ -15,8 +15,11 @@ The minimal amount of code needed to make a connection to a Socket.IO server is 
 	client::connection_ptr con = endpoint.get_connection(handler->perform_handshake("ws://localhost:8080"));
  
  For examples of event binding and additional settings, see the sample code in the msvc folder.
+
+### Namespaces and Endpoints
+To connect to a namespace, after doing the handshake and when the handler is ready, call `connect_endpoint("\endpointName")`. See the example for more details.
  
 ## Notes
-This client isn't a full port of the Socket.IO client at this point. It doesn't handle reconnection events, fire off default events, or maintain any status indicators. If you'd like to help make this a full implementation of the Socket.IO client, fork away!
+This client isn't a full port of the Socket.IO client at this point. It doesn't handle reconnection events, fire off default events, maintain any status indicators, or do things as elegantly as the javascript client. If you'd like to help make this a full implementation of the Socket.IO client, fork away!
 
 Socket.io-client++-specific source is released under the BSD license.
