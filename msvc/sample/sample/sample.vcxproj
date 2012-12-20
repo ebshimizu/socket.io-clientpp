@@ -104,12 +104,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\..\..\src;$(BOOSTROOT);..\..\..\lib\websocketpp\src;..\..\..\lib\rapidjson\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(BOOSTROOT)\bin.v2\libs\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BOOSTROOT)\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>..\..\..\src;$(BOOSTROOT);..\..\..\lib\websocketpp\src;..\..\..\lib\rapidjson\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\boost\bin.v2\libs\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BOOSTROOT)\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

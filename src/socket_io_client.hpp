@@ -86,6 +86,12 @@ public:
    // Allows user to send a custom socket.IO message
    void send(unsigned int type, std::string endpoint, std::string msg, unsigned int id = 0);
 
+   // Signal connection to the desired endpoint. Allows the use of the endpoint once message is successfully sent.
+   void connect_endpoint(std::string endpoint);
+
+   // Signal disconnect from specified endpoint.
+   void disconnect_endpoint(std::string endpoint);
+
    // Emulates the emit function from socketIO (type 5) 
    void emit(std::string name, Document& args, std::string endpoint = "", unsigned int id = 0);
    void emit(std::string name, std::string arg0, std::string endpoint = "", unsigned int id = 0);

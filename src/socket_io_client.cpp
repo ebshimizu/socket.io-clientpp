@@ -216,6 +216,16 @@ void socketio_client_handler::send(unsigned int type, std::string endpoint, std:
    send(package.str());
 }
 
+void socketio_client_handler::connect_endpoint(std::string endpoint)
+{
+    send("1::" + endpoint);
+}
+
+void socketio_client_handler::disconnect_endpoint(std::string endpoint)
+{
+    send("0::" + endpoint);
+}
+
 void socketio_client_handler::emit(std::string name, Document& args, std::string endpoint, unsigned int id)
 {
    // Add the name to the data being sent.

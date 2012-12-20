@@ -3,7 +3,9 @@
  *
  * Demonstrates basic usage of the socket.io client.
  * Sets up a connection, registers an event handler, and sends an event.
- * The demo socket.io server emits an "example" event in response.
+ * Uses the test.js server provided with this example code.
+ * Note that the events the server sends back are not bound to anything, but are logged
+ * in the output of the application with full logging enabled.
  */
 
 #include "stdafx.h"
@@ -13,7 +15,7 @@ using namespace socketio;
 
 int main(int /*argc*/, char* /*argv*/ []) {
    // websocket++ expects urls to begin with "ws://" not "http://"
-   std::string uri = "ws://localhost:8082/";
+   std::string uri = "ws://localhost:8080/";
 
    try {
       // Create and link handler to websocket++ callbacks.
@@ -43,6 +45,14 @@ int main(int /*argc*/, char* /*argv*/ []) {
       }
 
       handler->bind_event("example", &socketio_events::example);
+
+      // After connecting, send a connect message if using an endpoint
+      handler->connect_endpoint("/chat");
+
+      std::getchar();
+
+      // Then to connect to another endpoint with the same socket, we call connect again.
+      handler->connect_endpoint("/news");
 
       std::getchar();
 
