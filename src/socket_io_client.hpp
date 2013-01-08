@@ -71,7 +71,13 @@ public:
    // Function pointer to a event handler.
    // Args is an array, managed by rapidjson, and could be null
    // Can change to whatever signature you want, just make sure to change the call in on_socketio_event too.
+#ifndef BOOST_NO_CXX11_HDR_FUNCTIONAL
+   // If you're using C++11 and have the proper functional header in the standard lib, we'll use that
    typedef std::function<void (socketio_events&, const Value&)> eventFunc;
+#else
+   // Otherwise we'll let boost fill in the gaps
+   typedef boost::function<void (socketio_events&, const Value&)> eventFunc;
+#endif
 
    // Performs a socket.IO handshake
    // https://github.com/LearnBoost/socket.io-spec
@@ -152,7 +158,14 @@ private:
    std::string m_transports;
 
    // Heartbeat variabes.
+#ifndef BOOST_NO_CXX11_SMART_PTR
+   // If you're using C++11 use the standar library smart pointer
    std::unique_ptr<boost::asio::deadline_timer> m_heartbeatTimer;
+#else
+   // Otherwise let boost provideo the smart pointer
+   boost::shared_ptr<boost::asio::deadline_timer> m_heartbeatTimer;
+#endif
+
    bool m_heartbeatActive;
 
    // Event bindings

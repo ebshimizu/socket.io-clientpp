@@ -42,7 +42,11 @@ void socketio_client_handler::on_open(connection_ptr con)
 {
    m_con = con;
    // Create the heartbeat timer and use the same io_service as the main event loop.
+#ifndef BOOST_NO_CXX11_SMART_PTR
    m_heartbeatTimer = std::unique_ptr<boost::asio::deadline_timer>(new boost::asio::deadline_timer(con->get_io_service(), boost::posix_time::seconds(0)));
+#else
+   m_heartbeatTimer = boost::shared_ptr<boost::asio::deadline_timer>(new boost::asio::deadline_timer(con->get_io_service(), boost::posix_time::seconds(0)));
+#endif
    start_heartbeat();
    m_connected = true;
 
