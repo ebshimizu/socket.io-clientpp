@@ -4,8 +4,8 @@ This library is able to connect to a Socket.IO server, and then send and receive
 
 ## Usage
 1. Make sure you have the boost libararies installed.
-2. Include websocket++, rapidjson and `socket_io_handler.cpp` in your project.
-3. Include `socket_io_handler.hpp` where you want to use it.
+2. Include websocket++, rapidjson and `socket_io_client.cpp` in your project.
+3. Include `socket_io_client.hpp` where you want to use it.
 
 ### Example Code
 The minimal amount of code needed to make a connection to a Socket.IO server is as follows:
