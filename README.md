@@ -2,6 +2,8 @@
 A [websocket++](https://github.com/zaphoyd/websocketpp) and [rapidjson](http://code.google.com/p/rapidjson/) based C++ client for [Socket.IO](https://github.com/LearnBoost/socket.io).
 This library is able to connect to a Socket.IO server, and then send and receive messages.
 
+This project has not been tested with anything after Socket.IO 0.8.
+
 ## Usage
 1. Make sure you have the boost libararies installed.
 2. Include websocket++, rapidjson and `socket_io_client.cpp` in your project.
