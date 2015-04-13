@@ -1,5 +1,5 @@
 # Socket.IO Client++
-A [websocket++](https://github.com/zaphoyd/websocketpp) and [rapidjson](http://code.google.com/p/rapidjson/) based C++ client for [Socket.IO](https://github.com/LearnBoost/socket.io).
+A [websocket++](https://github.com/zaphoyd/websocketpp) and [rapidjson](https://github.com/miloyip/rapidjson) based C++ client for [Socket.IO](https://github.com/LearnBoost/socket.io).
 This library is able to connect to a Socket.IO server, and then send and receive messages.
 
 This project has not been tested with anything after Socket.IO 0.8.
